@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faq's </title>
+    <style>
+
+        .faq_page{
+            min-height: 100vh;
+            width:80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: url("contact_us_bg.jpg");
+        }
+
+        .title{
+            font-size: 3rem;
+            margin: 2rem 0rem;
+        }
+        .faq{
+            max-width: 1000px;
+            margin-top: 2rem;
+            margin-left:5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid brown;
+            cursor: pointer;
+            background-color: cornsilk;
+        }
+        .question{
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+        }
+        .question h3{
+            font-size: 1.8rem;
+        }
+
+        .answer{
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1.4s ease;
+        }
+        .answer p{
+            padding-top: 1rem;
+            line-height: 1.6;
+            font-size: 1.4rem;
+        }
+
+        .faq.active .answer{
+            max-height: 300px;
+            animation: fade1 1s ease-in-out;
+        }
+
+        .faq.active svg{
+            transform: rotate(180deg);
+        }
+
+        svg{
+            transition: transform 0.5s ease-in;
+        }
+
+        @keyframes fade1 {
+            from{
+                opacity: 0;
+                transform: translate(-10);
+            }
+            to{
+                opacity: 1;
+                transform: translate(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="faq_page"> 
+        <h2 class="title">FAQ</h2>
+        
+        <!-- question1  -->
+        <div class="faq">
+            <div class="question">
+                <h3>What are your business hours ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>We entertain calls from 10:00 AM to 6 PM , Monday to Saturday</p>
+            </div>
+        </div>
+
+        <!-- question2  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Do you cater to other cities besides Delhi/NCR?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>yes we have offices in mumbai and hyderabad and we offer a door pick-up and drop-off service in these cities! If you belong to a city other than Delhi, Mumbai or Hyderabad, 
+                    worry not, and just give us a call!
+                </p>
+            </div>
+        </div>
+
+        <!-- question3  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Can you change the colour of my shoes altogether ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>ofcourse we can! we have skilled colour matching experts who can re-dye your shoes in any colour you prefer!</p>
+            </div>
+        </div>
+
+        <!-- question4  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Do you clean suede shoes and bags?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                ofcourse we do! suede is also leather and mostly it is goat leather ! it has hair on it's surface which is called nap! thus suede cleaning is a very technical and tedious process!
+                generic cleaning is always followed by colour restoration!
+            </div>
+        </div>
+        <!-- question5  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Can you change the colour of my suedeo bag or shoe?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+
+        <!-- question6  -->
+        <div class="faq">
+            <div class="question">
+                <h3>If you restore the colour of my leather product , for how long will that colour stay ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+        <!-- question7  -->
+        <div class="faq">
+            <div class="question">
+                <h3>If i am not satisfied with your services, will my money be refunded?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+
+        <!-- question8  -->
+        <div class="faq">
+            <div class="question">
+                <h3>How do you accept payments ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+        <!-- question9  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Do you also clean non-leather products?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+
+        <!-- question10  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Why are your prices so high?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+        <!-- question11  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Can you clean my stained patent leather handbag?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+
+        <!-- question12  -->
+        <div class="faq">
+            <div class="question">
+                <h3>How long does the dry-cleaning and repair process take ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+        <!-- question13  -->
+        <div class="faq">
+            <div class="question">
+                <h3>What if i need my bag/shoe/jacket/wallet urgently?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+
+        <!-- question14  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Will the dry-cleaning & colour restoration process alter the original colour and texture of my product ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+        <!-- question15  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Are the chemicals that you use , safe? what if they cause and allergy or any other health hazard ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+
+        <!-- question15  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Do you have any cleaning certification?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+        <!-- question17  -->
+        <div class="faq">
+            <div class="question">
+                <h3>what if you lose or damage my product?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+
+        <!-- question18  -->
+        <div class="faq">
+            <div class="question">
+                <h3>What if my product get damaged during transit?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+        
+        <!-- question19  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Can you replace the sole of shoe ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+
+        <!-- question20  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Can you repair my heels ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+        <!-- question21  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Can you fix a broken rivet or metal buckle on my shoes ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+
+        <!-- question22  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Can you polish my leather jacket ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+        <!-- question23  -->
+        <div class="faq">
+            <div class="question">
+                <h3>will the charges be lower if i just go for drycleaning and not colour restoration!?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+
+        <!-- question24  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Can you repair the torn lining of my bag or jacket?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+        <!-- question25 -->
+        <div class="faq">
+            <div class="question">
+                <h3>The strap and handles of my bag have worn off, can you replace them for me ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+
+        <!-- question26  -->
+        <div class="faq">
+            <div class="question">
+                <h3>I want to personalize my wallet! Can you print the initials of my name on it?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+        <!-- question27  -->
+        <div class="faq">
+            <div class="question">
+                <h3>The metal buckle of my belt has become rusty and dull over time! Can you polish it and bring its shine back ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+
+        <!-- question28  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Can you alter the size of my leather jacket ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+        <!-- question29  -->
+        <div class="faq">
+            <div class="question">
+                <h3>My leather jacket is fraying and wearing off at some places, can you help?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+
+        <!-- question30  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Do you hae a shop that i can isit in Delhi/Mumbai or Hyderabad?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+
+                <!-- question31  -->
+                <div class="faq">
+                    <div class="question">
+                        <h3>What are your charges ?</h3>
+                        <svg width="15" height="10" viewbox="0 0 42 25 ">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                            repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+                    </div>
+                </div>
+                <!-- question32 -->
+                <div class="faq">
+                    <div class="question">
+                        <h3>Do you offer a guarantee/warrantee for your sevices?</h3>
+                        <svg width="15" height="10" viewbox="0 0 42 25 ">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                            repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+                    </div>
+                </div>
+        
+                <!-- question33  -->
+                <div class="faq">
+                    <div class="question">
+                        <h3>Will sofa cleaning be conducted at my home or your workshop?</h3>
+                        <svg width="15" height="10" viewbox="0 0 42 25 ">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                            repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+                    </div>
+                </div>
+
+             <!-- question34  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Do you make custom leather jackets?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+        <!-- question35  -->
+        <div class="faq">
+            <div class="question">
+                <h3>How do i send my product to The leather laundry ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+
+        <!-- question36  -->
+        <div class="faq">
+            <div class="question">
+                <h3>Do you charge extra for the pick and drop service ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+
+                <!-- question37  -->
+                <div class="faq">
+                    <div class="question">
+                        <h3>How do i go about giving my product to TLL? What is the process?</h3>
+                        <svg width="15" height="10" viewbox="0 0 42 25 ">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                            repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+                    </div>
+                </div>
+                <!-- question38  -->
+                <div class="faq">
+                    <div class="question">
+                        <h3>do you offer franchise opportunities?</h3>
+                        <svg width="15" height="10" viewbox="0 0 42 25 ">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                            repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+                    </div>
+                </div>
+        
+                <!-- question39  -->
+                <div class="faq">
+                    <div class="question">
+                        <h3>Where is TLL located?</h3>
+                        <svg width="15" height="10" viewbox="0 0 42 25 ">
+                            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="answer">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                            repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+                    </div>
+                </div>
+
+           <!-- question40  -->
+        <div class="faq">
+            <div class="question">
+                <h3>do you do all kinds of repairs ?</h3>
+                <svg width="15" height="10" viewbox="0 0 42 25 ">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis atque repellat est recusandae! Facere debitis, esse possimus quos laborum, architecto vitae quaerat 
+                    repellat quae assumenda quod corporis nostrum perferendis ad.</p>
+            </div>
+        </div>
+    
+
+
+    </section>
+    <script>
+        const faqs =document.querySelectorAll(".faq");
+        faqs.forEach(faq => {
+            faq.addEventListener("click", () => {
+                faq.classList.toggle("active");
+            })
+        })
+    </script>
+</body>
+</html>
